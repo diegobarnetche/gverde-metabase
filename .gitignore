@@ -1,0 +1,4 @@
+.env
+metabase_pgdata/
+.DS_Store
+Thumbs.db
