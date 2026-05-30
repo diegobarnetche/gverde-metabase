@@ -33,6 +33,8 @@ services:
       MB_DB_USER: ${MB_POSTGRES_USER}
       MB_DB_PASS: ${MB_POSTGRES_PASSWORD}
       JAVA_TIMEZONE: America/Montevideo
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     depends_on:
       metabase-db:
         condition: service_healthy
